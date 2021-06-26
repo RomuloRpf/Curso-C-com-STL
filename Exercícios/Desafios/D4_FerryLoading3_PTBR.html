@@ -1,0 +1,70 @@
+<html><head><title>Problema B: Ferry Loading III</title></head>
+
+<body><img src=p10901.jpg height=300 width=450 align="right">
+<h2>Problema B:  Ferry Loading III</h2>
+Antes das pontes se tornarem populares, balsas eram usadas para transportar carros através de
+rios. Ao contrário de suas primas maiores, as balsas de rios funcionam de acordo com uma
+diretriz e são movidos pela corrente do rio. Carros podem subir na balsa por um lado, a balsa, então,
+cruza o rio, e os carros saem dela pelo outro lado.
+<p>
+Nesse problema temos uma balsa que pode levar <em>n</em> carros
+através do rio em <em>t</em> minutos e retornar em outros <em>t</em> minutos.
+Um carro pode chegar em qualquer uma das margens do rio para ser transportado pela
+balsa para a margem oposta. A balsa viaja continuamente de uma margem para outra
+desde que ela esteja carregando um carro ou desde que haja pelo menos um carro esperando
+em uma das margens. Toda vez que a balsa chega em uma das margens, ela descarrega todo
+o seu carregamento de carros e em seguida até <em>n</em> carros que estão aguardando
+naquela margem embarcam. Se houverem mais de <em>n</em> carros esperando, aqueles
+que estão há mais tempo ali têm prioridade. Se não houverem carros em nenhuma das margens,
+a balsa espera até que um carro chegue, o carrega (se ele chegar na mesma margem que a balsa
+estiver esperando) e atravessa o rio. Em que horário cada carro alcança o outro lado do rio?
+</p><p>
+A primeira linha do input contém <i>c</i>, o número de casos de teste.
+Cada caso de teste começa com <i>n, t, m</i>.
+<i>m</i> linhas seguem, cada uma dando o tempo de chegada de um carro
+(em minutos contando a partir do começo do dia), e a margem à qual o 
+carro chega ("left" or "right").
+Para cada caso de teste, imprima uma linha por carro, na mesma ordem de
+carros dada no input, dando o tempo de chegada de cada um na margem oposta a que chegou.
+Imprima uma linha em branco entre casos de teste.
+</p><p>
+Você pode assumir que 0 &lt; n, t, m &le; 10000.  Os tempos de chegada de cada
+caso de teste estão listados em ordem crescente. A balsa está inicialmente na margem "left".
+O tempo de embarque e desembarque dos carros pode ser considerado 0.
+</p><h3>Input de Exemplo</h3>
+<pre>2
+2 10 10
+0 left
+10 left
+20 left
+30 left
+40 left
+50 left
+60 left
+70 left
+80 left
+90 left
+2 10 3
+10 right
+25 left
+40 left
+</pre>
+<h3>Output Correspondente</h3>
+<pre>
+10
+30
+30
+50
+50
+70
+70
+90
+90
+110
+
+30
+40
+60
+</pre>
+<hr>
+<i>Gordon V. Cormack</i></body></html>
